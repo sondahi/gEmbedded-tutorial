@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.comert</groupId>
+    <artifactId>gEmbedded-tutorial</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <gEmbedded.version>2022.04.16-SNAPSHOT</gEmbedded.version>
+    </properties>
+
+    <repositories>
+        <repository> <!--Mandatory, this is repo of the project-->
+            <id>sondahi-gEmbedded</id>
+            <url>https://packagecloud.io/sondahi/gEmbedded/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency> <!--Mandatory, this is specification of the project-->
+            <groupId>com.comert</groupId>
+            <artifactId>gEmbedded-api</artifactId>
+            <version>${gEmbedded.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency> <!--Mandatory, this is provider of the project, only one provider have to be selected-->
+            <groupId>com.comert</groupId>
+            <artifactId>gEmbedded-raspberrypi-4B</artifactId>
+            <version>${gEmbedded.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency> <!--Optional, this is component library of the project, like i2c components, gyros, servos etc.-->
+            <groupId>com.comert</groupId>
+            <artifactId>gEmbedded-component</artifactId>
+            <version>${gEmbedded.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
