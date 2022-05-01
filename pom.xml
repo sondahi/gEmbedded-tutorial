@@ -16,19 +16,6 @@
         <gEmbedded.version>2022.04.16-SNAPSHOT</gEmbedded.version>
     </properties>
 
-    <repositories>
-        <repository> <!--Mandatory, this is repo of the project-->
-            <id>sondahi-gEmbedded</id>
-            <url>https://packagecloud.io/sondahi/gEmbedded/maven2</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
     <dependencies>
         <dependency> <!--Mandatory, this is specification of the project-->
             <groupId>com.comert</groupId>
