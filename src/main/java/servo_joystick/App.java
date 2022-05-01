@@ -15,7 +15,7 @@ import com.comert.gEmbedded.api.device.i2c.master.configurator.I2CMasterConfigur
 
 public class App {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Device device = DeviceFactory.getDeviceInstance();
         try {
             device.setUpDevice();
@@ -55,7 +55,6 @@ public class App {
                     System.out.println(ioException.getMessage());
                 }
             }
-
         } catch (Throwable throwable) {
             throwable.printStackTrace();
             throw throwable;
