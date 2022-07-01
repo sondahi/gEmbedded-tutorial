@@ -1,14 +1,15 @@
 package servo_joystick;
 
 import com.comert.gEmbedded.api.device.Device;
-import com.comert.gEmbedded.api.device.common.exception.IOException;
-import com.comert.gEmbedded.api.device.factory.DeviceFactory;
-import com.comert.gEmbedded.api.device.gpio.factory.GPIOFactory;
+
+import com.comert.gEmbedded.api.device.DeviceFactory;
+import com.comert.gEmbedded.api.device.exception.IOException;
+import com.comert.gEmbedded.api.device.gpio.GPIOFactory;
 import com.comert.gEmbedded.api.device.gpio.pin.PWMPin;
 import com.comert.gEmbedded.api.device.gpio.pin.Pin;
 import com.comert.gEmbedded.api.device.gpio.pin.PinFunction;
 import com.comert.gEmbedded.api.device.gpio.pin.configurator.PWMPinConfigurator;
-import com.comert.gEmbedded.api.device.i2c.factory.I2CMasterFactory;
+import com.comert.gEmbedded.api.device.i2c.I2CMasterFactory;
 import com.comert.gEmbedded.api.device.i2c.master.I2CBus;
 import com.comert.gEmbedded.api.device.i2c.master.I2CMaster;
 import com.comert.gEmbedded.api.device.i2c.master.configurator.I2CMasterConfigurator;

@@ -1,8 +1,8 @@
 package output_pin;
 
 import com.comert.gEmbedded.api.device.Device;
-import com.comert.gEmbedded.api.device.factory.DeviceFactory;
-import com.comert.gEmbedded.api.device.gpio.factory.GPIOFactory;
+import com.comert.gEmbedded.api.device.DeviceFactory;
+import com.comert.gEmbedded.api.device.gpio.GPIOFactory;
 import com.comert.gEmbedded.api.device.gpio.pin.OutPutPin;
 import com.comert.gEmbedded.api.device.gpio.pin.Pin;
 import com.comert.gEmbedded.api.device.gpio.pin.PinState;
@@ -10,6 +10,7 @@ import com.comert.gEmbedded.api.device.gpio.pin.configurator.OutPutPinConfigurat
 
 public class App {
     public static void main(String[] args) throws InterruptedException {
+
         Device device = DeviceFactory.getDeviceInstance();
         try {
             device.setUpDevice();
